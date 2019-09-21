@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+main(){
+    setlocale(LC_ALL,"Turkish");
+
+    int i,j;
+    for(i=2;i<=20;i++){
+        for(j=2;j<=(i/j);j++)
+            if(!(i%j))
+                break;
+            if(j>(i/j))
+                printf("%d sayısı asal sayıdır\n",i);
+
+}
+        return 0;
+
+}
