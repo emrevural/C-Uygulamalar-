@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+    int yukseklik,taban,alan;
+   printf("Üçgenin Yüksekliğini Giriniz.\n");
+   scanf("%d",&yukseklik);
+    printf("Üçgenin Tabanını Giriniz.\n");
+   scanf("%d",&taban);
+   alan=(taban*yukseklik)/2;
+   printf("Üçgenin Alanı = %d \n",alan);
+
+    return 0;
+}
