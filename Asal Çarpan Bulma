@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+
+    int sayi;
+    printf("Bir Sayı Giriniz.\n");
+    scanf("%d",&sayi);
+
+    for(int i=2;i<=sayi;i++){
+      if((sayi%i==0)){
+        printf("%d\n",i);
+        sayi=sayi/i;
+        i--;
+      }
+    }
+
+
+    return 0;
+}
