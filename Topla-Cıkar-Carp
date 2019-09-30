@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"Turkish");
+
+
+    int n,s;
+    printf("Bir  Bitiş sayısı Girin\n");
+    scanf("%d",&n);
+    printf("Bir Başlangıç sayısı Girin\n");
+    scanf("%d",&s);
+int toplam=0;
+int carp=1;
+    switch (s){
+
+    case 1:
+
+        for(int i=1;i <=n;i++){
+            toplam+=i;
+        }
+        printf("Toplam = %d",toplam);
+        break;
+
+    case 2:
+
+        for(int i=1;i<=n;i++){
+            carp*=i;
+        }
+        printf("Çarpım = %d",carp);
+        break;
+    case 3:
+        for(int i=1;i<=n;i++){
+            if(!(i%3)){
+                 printf("3'ün Katı sayılar = %d \n",i);
+            }
+        }
+
+        break;
+    default :
+        printf("1 ile 3 arasında bir sayı giriniz.");
+        break;
+    }
+    return 0;
+}
