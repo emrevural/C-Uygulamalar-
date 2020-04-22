@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int karakterSay(char *a){
+   int i;
+    for(i=0;a[i]!='\0';i++){
+        //boş
+    }
+return i;
+}
+void basHarfBul(char*c,int k){
+
+int i=0;
+if(c[0]!=' '){
+            printf("%c\n",c[0]);
+        }
+for(;i<k;i++){
+
+
+    if(c[i]==' '&& c[i+1] != ' '){
+         printf("%c\n",c[i+1]);
+    }
+}
+}
+int main(){
+char cumle[100];
+printf("Cumleyi Giriniz:");
+gets(cumle);
+int kSsayi=karakterSay(cumle);
+basHarfBul(cumle,kSsayi);
+
+
+    return 0;
+}
